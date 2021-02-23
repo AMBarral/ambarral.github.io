@@ -10,7 +10,19 @@
  		
  		function myFirstFunction() {
 
- 		alert('hello');	
+ 		   document.getElementById("content").innerHTML ='Zoink!';	
+ 		
+ 		}
+
+ 		function mySecondFunction() {
+
+ 		   document.getElementById("content").innerHTML ='Grand Prize!';	
+ 		
+ 		}
+
+ 		function myThirdFunction() {
+
+ 		   document.getElementById("content").innerHTML ='Zoink!';	
  		
  		}
 
@@ -18,15 +30,26 @@
  	
  	</script>
 
+ 	<style>
+ 		#content {
+ 			background: grey;
+ 		}
+
+ 	</style>
+
   </head>
 
   <body>
 
-    <h1>Spirit Animal Quiz</h1>
+    <h1>Practice Assignment 1</h1>
 
-    <button onclick="myFirstFunction()">Button 1</button>
-    <button>Button 2</button>
-    <button>Button 3</button>
+    <button onclick="myFirstFunction()">Door Number 1</button>
+    <button onclick="mySecondFunction()">Door Number 2</button>
+    <button onclick="myThirdFunction()">Door Number 3</button>
+
+    <div id="content">
+    	Choose a Door!
+    </div>
 
 
 
